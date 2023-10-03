@@ -10,13 +10,13 @@ You may observe that we do not use a secure connection, which is an issue to be 
 
 ## Fair Use Disclaimer
 
-This website contains copyrighted songs that are used for research purposes only. We do not earn any money from the use of these copyrighted materials. Our use of these songs falls under the doctrine of "Fair Use" as defined in Section 107 of the United States Copyright Act.
+The dataset contains copyrighted songs that are used for research purposes only. We do not earn any money from the use of these copyrighted materials. Our use of these songs falls under the doctrine of "Fair Use" as defined in Section 107 of the United States Copyright Act.
 
 ### Fair Use Factors Considered:
 
 #### Purpose and Character of Use
 
-The use of copyrighted songs on this website is for research and educational purposes. 
+The use of copyrighted songs in the application is for research and educational purposes. 
 
 We do not derive any commercial benefit from the inclusion of these songs. 
 
@@ -41,7 +41,7 @@ We do not offer the songs for download, sale, or any form of commercial distribu
 
 We acknowledge the rights of the copyright holders and make every effort to provide proper attribution where necessary.
 
-If you are the copyright owner of any of the songs used on this website and believe that your rights have been infringed upon, please contact us, and we will promptly address your concerns by either removing the content or providing appropriate attribution as required.
+If you are the copyright owner of any of the songs used in the dataset and believe that your rights have been infringed upon, please contact us, and we will promptly address your concerns by either removing the content or providing appropriate attribution as required.
 
 Please understand that our use of copyrighted songs is in accordance with the principles of fair use for research and educational purposes and is not intended for commercial gain.
 
