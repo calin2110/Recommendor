@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row mt-1 mb-1">
+    <div class="col-md-6 centered">
+    <input type="text" class="form-control" [(ngModel)]="filter" (ngModelChange)="filterUsers()" placeholder="Enter search term">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 centered">
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th  scope="col">Full Name</th>
+              <th *ngIf="!mobilePortrait" scope="col">Email</th>
+              <th scope="col">Genre</th>
+              <th scope="col">Action</th>
+              <th *ngIf="!mobilePortrait" scope="col">Ratings</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let user of users">
+                <td>{{ user.firstName }} {{ user.lastName }}</td>
+                <td *ngIf="!mobilePortrait">{{ user.email }}</td>
+                <td>
+                  <select class="form-control" (change)="setSaveOn(user)" [(ngModel)]="user.genre">
+                    <option *ngFor="let genre of genres" [value]="genre"> {{ genre.toLowerCase() }}</option>
+                  </select>
+                </td>
+                <td>
+                  <i
+                    *ngIf="user.canBeDeleted"
+                    class="bi bi-trash text-danger float-start"
+                    style="font-size: 1.5em;"
+                    (click)="deleteUser(user)">
+                  </i>
+
+                  <i
+                    class="bi bi-save float-end"
+                    style="font-size: 1.5em;"
+                    [ngClass]="isUserChanged(user) ? 'text-success' : 'text-secondary'"
+                    (click)="saveUser(user)">
+                  </i>
+                </td>
+                <td *ngIf="!mobilePortrait" class="text-center">{{ user.ratingsCount }}</td>
+              </tr>
+            </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div *ngIf="isLoading" class="spinner-container">
+  <div class="spinner-border text-primary" role="status">
+  </div>
+</div>
+
+<div class="container" *ngIf="!isLoading">
+  <ul class="list-group">
+    <li *ngFor="let request of recommendationRequests" class="list-group-item">
+      <div class="row">
+        <div class="col-9 text-center" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap">
+          <a [href]="request.youtubeLink">{{request.youtubeLink}}</a>
+        </div>
+        <div class="col-1">
+          <button
+            class="btn btn-primary ml-auto"
+            style="font-size: 0.8rem"
+            (click)="seeDetails(request.id)"
+          >Details</button>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <button class="btn-primary btn float-end mt-3" (click)="goBackToSearch()">Back to Search</button>
+</div>

@@ -1,0 +1,29 @@
+<div *ngIf="isLoading" class="spinner-container">
+  <div class="spinner-border text-primary" role="status">
+  </div>
+</div>
+
+<div class="container" *ngIf="!isLoading">
+  <div class="row justify-content-center">
+    <div class="col-lg-6 col-md-8 col-sm-10">
+      <div class="card my-5">
+        <div class="card-body">
+          <div class="col-md-6 centered">
+            <input type="text" class="form-control" [(ngModel)]="youtubeLink" placeholder="Enter YouTube Link">
+          </div>
+
+          <div class="text-danger d-flex justify-content-center ms-2" *ngIf="errorMessage != null">
+            <span>{{ errorMessage }}</span>
+          </div>
+          <div class="col-md-12 mt-2 d-flex justify-content-center">
+            <button class="btn btn-primary btn-block" (click)="recommend()">Recommend me!</button>
+          </div>
+
+          <div class="col-md-12 mt-2 d-flex justify-content-center">
+            <button class="btn btn-secondary btn-block" (click)="goToHistory()">See History</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

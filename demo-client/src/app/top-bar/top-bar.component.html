@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="max-height: 50px">
+  <div class="container-fluid">
+    <div class="navbar-brand login-info">
+      <div class="h5">
+        {{getTopBarText()}}
+      </div>
+    </div>
+    <div class="h5" style="margin-left: -10%">
+      {{getMiddleText()}}
+    </div>
+    <div class="navbar-nav ml-auto">
+      <button class="btn btn-primary h5" (click)="buttonClick()">{{getButtonText()}}</button>
+    </div>
+  </div>
+</nav>

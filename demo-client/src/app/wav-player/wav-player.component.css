@@ -1,0 +1,21 @@
+.card {
+  border-radius: 0;
+}
+.card-body {
+  padding: 0;
+}
+
+audio {
+  width: 60%;
+  height: 40px;
+  background-color: #f8f9fa;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 0;
+}
+
+.shaded-box {
+  background-color: #f0f0f0;
+  border: 1px solid #000;
+}

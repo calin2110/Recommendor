@@ -1,0 +1,7 @@
+<div class="d-flex justify-content-center align-items-center rounded-circle bg-secondary" style="height: 100px; width: 100px;">
+  <audio [src]="audioSafeUrl" #audioPlayer (playing)="onPlaying()" (pause)="onPaused()" (ended)="onEnded()"></audio>
+  <button class="btn btn-lg btn-light rounded-circle" (click)="clickButton()">
+    <i *ngIf="!isPlaying" class="bi bi-play-fill"></i>
+    <i *ngIf="isPlaying" class="bi bi-stop-fill"></i>
+  </button>
+</div>
